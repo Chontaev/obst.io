@@ -21,32 +21,35 @@ close1.onclick = function func(){
   close1.style.zIndex = "0"
 }
 sing.onclick = () =>{
-    sing.style="display: none; transition: 1s;"
-    auto.style="display:block; z-index:99; transition: 1s;"
+    sing.style="z-index:-1; "
+    auto.style="display:block; z-index:100; position:absalute;"
 }
 cont.onclick =() =>{
-    auto.style="display: none; transition: 2s;"
-    sing.style="display:block; z-index:99; transition: 2s;"
+    auto.style="display: none;z-index:100"
+    sing.style="display:block; z-index:100;"
 }
 
 
-let insideWidth = inside.offsetWidth
-let sliderWidth = slider.offsetWidth
-let colonWidth = colons[0].offsetWidth
-let betw = insideWidth-sliderWidth
-var temp=0
-
-next.onclick = ()=>{
-		if(temp > betw){
-			temp = -colonWidth
-		}
-		temp+=2*colonWidth+35
-		inside.style.transform=`translateX(${-temp}px)`
-}
-back.onclick = ()=>{
-		if(temp < 0){
-			temp = betw+colonWidth
-		}
-		temp-=2*colonWidth+35
-		inside.style.transform=`translateX(${-temp}px)`
-}
+$(document).ready(function(){
+	$('.slider').slick({
+		arrows:true,
+		slidesToShow:5,
+		autoplay: false,
+        speed:1000,
+        slidesToScroll: 3,
+		responsive:[
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
+});
