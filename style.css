@@ -7,6 +7,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
     color: white;
+    background-color: darkcyan;
+    background:linear-gradient(180deg, darkcyan, #fff )
+
 }
 .nav-bar{
     display: flex;
@@ -44,12 +47,12 @@ body{
   }
 .header{
     padding : 0.3em 2rem;
-    background-color: darkcyan;
     padding-bottom: 5vh;
 }
 .name{
     font-size: 9vh;
     font-weight: bold;
+
 }
 .name_logo{
     text-decoration: none;
@@ -69,8 +72,6 @@ body{
     margin: 0 1em;
     outline: none;
     border:none;
-    margin-left: 135px;
-    transition: 1s;
 }
 
 .basket{
@@ -190,10 +191,11 @@ body{
     padding-right: 20px;
 }
 .auto{
-    margin-top:33%;
+    margin-left: 70%;
     width: 40vh;
     height: 30vh;
     display: none;
+    position: absolute;
 }
 .auto_firs{
     color: white;
@@ -224,9 +226,10 @@ button{
     cursor: pointer;
 }
 .frame{
+    margin-top: 10vh;
     background-color: #fff;
     border: none;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 .frame_cnt{
     margin: 0 8rem;
@@ -263,171 +266,70 @@ button{
     padding : 0.3em 2rem;   
     align-items: center;
     justify-content: center;
-    background-color: #fff;
 }
-#slider{
-    display: flex;
-	width: 100%;
-	height: 58vh;
-	background-color: rgb(243, 234, 234);
-    overflow: hidden;
-    padding:2vh;
-    align-items: center;
-    margin-bottom:5vh;
-    
+.slick-list {
+	overflow: hidden;
 }
-#inside{
-	height: 50vh;
-	width: 420%;
+.slick-track{
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-    transition: 1s;
+	align-items: flex-start;
 }
 .colons{
     display: block;
-	background-color: rgb(21, 119, 119);
-	height: 98%;
-	width: 36vh;
+}
+
+.slider {
+    position: relative;
+}
+
+@media (max-width:767px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -50px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 50px;
+    height: 100px;
+    opacity: .005;
     transition: 1s;
-    margin: 1px;
 }
-h1{
-    color:darkcyan;
+
+.slider:hover .slick-arrow{
+    opacity: 1;
+    transition: 1s;
 }
-.colons:hover{
-	transform: scale(1.1);
-	cursor: pointer;
-}
-#back, #next{
-    z-index: 99;
-    position: absolute;
-    justify-content: center;
-    font-size: 50px;
-    background-color: transparent;
-    border:none;
-    margin: 10px;
+.slider .slick-arrow.slick-prev:hover, .slider .slick-arrow.slick-next:hover{
+    background-color: rgb(182, 226, 226);
     outline: none;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('https://image.flaticon.com/icons/svg/126/126492.svg') no-repeat;
+    background-position: center;
+    background-size: 7vh;
+}
+.slider .slick-arrow.slick-next{
+	right: 1vh;
+    background: url("https://image.flaticon.com/icons/svg/126/126490.svg") 0 0 / 100% no-repeat;
     color: white;
+    background-position: center;
+}
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
 }
 
-#back{
-    left: 2%;
-    background-color: transparent;
-}
 
-#next{
-    right: 2%;
-    background-color: transparent;
+h1{
+    color:rgb(176, 235, 235);
 }
-
-#back:hover, #next:hover{
-    background-color: white;
-    opacity: .5;
-    width: 50px;
-    height: 120px;
-    border-radius: 2px;
-    color: slategray;border: none;
+.obl{
+    background: rgb(255, 255, 255);
+    padding: 1vh;
+    border-radius: 10px;
 }
-
-.c1{
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51ldXBWwuyL._SX324_BO1,204,203,200_.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c2{
-    background-image: url(https://media.favot.ru/uploads/2019/12/original-1576498627253.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c3{
-    background-image: url(https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/234c7c011ba026e66d29567e1be1d1f7/1/0/1010391968.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c4{
-    background-image: url(https://s1.livelib.ru/boocover/1000312905/200/c5a9/boocover.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c5{
-    background-image: url(https://cv6.litres.ru/pub/c/elektronnaya-kniga/cover_330/122462-erih-mariya-remark-tri-tovarischa.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c6{
-    background-image: url(2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c7{
-    background-image: url(https://cdn.book24.ru/v2/AST000000000029614/COVER/cover3d1__w674.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c8{
-    background-image: url(https://img-gorod.ru/24/121/2412150_detail.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c9{
-    background-image: url(https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/234c7c011ba026e66d29567e1be1d1f7/i/m/img934_2_8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c10{
-    background-image: url(https://img1.wbstatic.net/big/new/1990000/1999991-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c11{
-    background-image: url(https://i4.mybook.io/p/512x852/book_covers/0c/2d/0c2dc81e-7144-497d-8f42-74841cea102d.jpg?v2);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c12{
-    background-image: url(https://cdn1.ozone.ru/s3/multimedia-r/6008318151.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c13{
-    background-image: url(https://decem.info/wp-content/uploads/Tjomnaja-Bashnja.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c14{
-    background-image: url();
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c15{
-    background-image: url(https://www.kinopoisk.ru/images/film_big/328.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c16{
-    background-image: url(https://i.i.ua/photo/images/pic/1/4/1360141_ee1010a3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c17{
-    background-image: url(https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/81/70/5ef64b20-87b7-4f99-9c3f-984c5241d806.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c18{
-    background-image: url(https://cv1.litres.ru/pub/c/elektronnaya-kniga/cover_330/25096915-bertold-shpuler-zolotaya-orda-mongoly-na-rusi-1223-1502.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c19{
-    background-image: url(https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/234c7c011ba026e66d29567e1be1d1f7/c/o/cover_83_193.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.c20{
-    background-image: url(https://img1.wbstatic.net/big/new/2160000/2167423-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
