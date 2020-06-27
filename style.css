@@ -1,0 +1,433 @@
+*{
+    -webkit-box-sizzng:border box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.menu-btn {
+    display: block;
+    width: 70px;
+    height: 50px;
+    position: relative;
+    top:20%;
+
+  }
+#open, #open::before, #open::after {
+    position: absolute;
+    top: 50%; margin-top: -4px;
+    left: 50%; margin-left: -30px;
+    width: 60px;
+    height: 8px;
+    background-color: #fff;
+  }
+  #open::before,
+  #open::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+  }
+  #open::before {
+    transform: translateY(-14px);
+  }
+  #open::after {
+    transform: translateY(14px);
+  }
+.header{
+    padding : 0.3em 2rem;
+    background-color: darkcyan;
+    padding-bottom: 5vh;
+}
+.name{
+    font-size: 9vh;
+    font-weight: bold;
+}
+.name_logo{
+    text-decoration: none;
+    color: #fff;
+}
+
+.top_menu_url{
+    display: flex;
+    align-items: center;
+}
+
+.sing{
+    background-color: transparent;
+    font-size: 30px;
+    color:gold;
+    text-decoration: none;
+    margin: 0 1em;
+    outline: none;
+    border:none;
+    margin-left: 135px;
+    transition: 1s;
+}
+
+.basket{
+    display: block;
+    margin: 0 1em;
+}
+
+.top-nav{
+    margin: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top_nav_item_1{
+    display: flex;
+}
+
+.srh{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border-color: transparent;
+    margin: 0 1em;
+}
+.srh-btn{
+    width: 50px;
+    height: 50px;
+    margin: 0 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border-color: transparent;
+}
+
+.item{
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0 1em;
+    outline: none;
+    text-decoration: none;
+}
+
+.menu_close{
+    opacity: 0;
+    transition: 1s ease-in;
+    top:0;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 35%;
+    z-index: -1;
+  }
+
+.menu_close_btn1 {
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -15px;
+    width: 30px;
+    transform: rotate(45deg);
+    height: 2px;
+    background-color: #222;
+  }
+  .menu_close_btn2 {
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -15px;
+    width: 30px;
+    transform: rotate(-45deg);
+    height: 2px;
+    background-color: #222;
+  }
+/*main container*/
+
+
+.sector{
+    display: block;
+    top:0;
+    left: 0;
+    min-height: 100%;
+    height: 100%;
+    width: 35%;
+    transform: translateX(-115%);
+    position: absolute;
+    overflow: scroll;
+    scroll-snap-align: none;
+    display: block;
+    background-color: rgb(243, 234, 234);
+    transition: 1s ease-in;
+    z-index: 99;
+  }
+.genres{
+    display: block;
+    font-size: 34px;
+    font-weight: bold;
+    padding-top: 0.3em;
+    padding-left: 1em;
+    outline: none;
+    color: darkcyan;
+    border: 2px solid transparent;
+    text-decoration: none;
+}
+
+.g1{
+    margin-top: 1em;
+}
+.genres:hover{
+    border: 2px solid darkcyan;
+}
+.lang{
+    text-align: right;
+}
+.ru{
+    padding-right: 20px;
+}
+.auto{
+    margin-top:33%;
+    width: 40vh;
+    height: 30vh;
+    display: none;
+}
+.auto_firs{
+    color: white;
+}
+.auto_second{
+    color: white;
+    font-size: 0.8em;
+}
+.auto_input{
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 2px ;
+}
+.auto_btn{
+    margin-top: 15px;
+    width: 252px;
+    height: 33px;
+    border: none;
+    border-radius: 2px ;
+    font-size: 1em;
+    background-color:goldenrod;
+    color: white;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.frame{
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+}
+.frame_cnt{
+    margin: 0 8rem;
+    display: flex;
+}
+
+.frame_text{
+    margin: 1.3em 0.87em;
+    width: 50%;
+    color: darkcyan;
+}
+
+.frame-img{
+    margin: 1.1em 0em;
+    margin-right: 1em;
+    width: 50%;
+    text-align: center;
+}
+
+.first-line{
+    font-size: 1em;
+    margin: 0.4em 0;
+}
+.second-line{
+    font-size: 2.33em;
+    margin: 0.4em 0;
+}
+.third-line{
+    font-size: 1em;
+    margin: 0.4em 0;
+}
+
+.main{
+    padding : 0.3em 2rem;   
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+#slider{
+    display: flex;
+	width: 100%;
+	height: 58vh;
+	background-color: rgb(243, 234, 234);
+    overflow: hidden;
+    padding:2vh;
+    align-items: center;
+    margin-bottom:5vh;
+    
+}
+#inside{
+	height: 50vh;
+	width: 420%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    transition: 1s;
+}
+.colons{
+    display: block;
+	background-color: rgb(21, 119, 119);
+	height: 98%;
+	width: 36vh;
+    transition: 1s;
+    margin: 1px;
+}
+h1{
+    color:darkcyan;
+}
+.colons:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+#back, #next{
+    z-index: 99;
+    position: absolute;
+    justify-content: center;
+    font-size: 50px;
+    background-color: transparent;
+    border:none;
+    margin: 10px;
+    outline: none;
+    color: white;
+}
+
+#back{
+    left: 2%;
+    background-color: transparent;
+}
+
+#next{
+    right: 2%;
+    background-color: transparent;
+}
+
+#back:hover, #next:hover{
+    background-color: white;
+    opacity: .5;
+    width: 50px;
+    height: 120px;
+    border-radius: 2px;
+    color: slategray;border: none;
+}
+
+.c1{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51ldXBWwuyL._SX324_BO1,204,203,200_.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c2{
+    background-image: url(https://media.favot.ru/uploads/2019/12/original-1576498627253.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c3{
+    background-image: url(https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/234c7c011ba026e66d29567e1be1d1f7/1/0/1010391968.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c4{
+    background-image: url(https://s1.livelib.ru/boocover/1000312905/200/c5a9/boocover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c5{
+    background-image: url(https://cv6.litres.ru/pub/c/elektronnaya-kniga/cover_330/122462-erih-mariya-remark-tri-tovarischa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c6{
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c7{
+    background-image: url(https://cdn.book24.ru/v2/AST000000000029614/COVER/cover3d1__w674.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c8{
+    background-image: url(https://img-gorod.ru/24/121/2412150_detail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c9{
+    background-image: url(https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/234c7c011ba026e66d29567e1be1d1f7/i/m/img934_2_8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c10{
+    background-image: url(https://img1.wbstatic.net/big/new/1990000/1999991-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c11{
+    background-image: url(https://i4.mybook.io/p/512x852/book_covers/0c/2d/0c2dc81e-7144-497d-8f42-74841cea102d.jpg?v2);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c12{
+    background-image: url(https://cdn1.ozone.ru/s3/multimedia-r/6008318151.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c13{
+    background-image: url(https://decem.info/wp-content/uploads/Tjomnaja-Bashnja.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c14{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c15{
+    background-image: url(https://www.kinopoisk.ru/images/film_big/328.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c16{
+    background-image: url(https://i.i.ua/photo/images/pic/1/4/1360141_ee1010a3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c17{
+    background-image: url(https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/81/70/5ef64b20-87b7-4f99-9c3f-984c5241d806.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c18{
+    background-image: url(https://cv1.litres.ru/pub/c/elektronnaya-kniga/cover_330/25096915-bertold-shpuler-zolotaya-orda-mongoly-na-rusi-1223-1502.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c19{
+    background-image: url(https://img.yakaboo.ua/media/catalog/product/cache/1/image/398x565/234c7c011ba026e66d29567e1be1d1f7/c/o/cover_83_193.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.c20{
+    background-image: url(https://img1.wbstatic.net/big/new/2160000/2167423-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
