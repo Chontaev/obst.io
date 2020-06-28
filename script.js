@@ -21,7 +21,7 @@ close1.onclick = function func(){
   close1.style.zIndex = "0"
 }
 sing.onclick = () =>{
-    sing.style="z-index:-1; "
+    sing.style="z-index:-11; opacity:0 "
     auto.style="display:block; z-index:100; position:absalute;"
 }
 cont.onclick =() =>{
@@ -35,8 +35,9 @@ $(document).ready(function(){
 		arrows:true,
 		slidesToShow:5,
 		autoplay: false,
-        speed:1000,
-        slidesToScroll: 3,
+		autoplayTime:10000,
+        speed:300,
+        slidesToScroll: 1,
 		responsive:[
 			{
 				breakpoint: 768,
@@ -53,3 +54,4 @@ $(document).ready(function(){
 		]
 	});
 });
+
