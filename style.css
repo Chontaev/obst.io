@@ -254,7 +254,7 @@ button{
     margin: 0.4em 0;
 }
 .second-line{
-    font-size: 2.33em;
+    font-size: 2.2em;
     margin: 0.4em 0;
 }
 .third-line{
@@ -276,6 +276,18 @@ button{
 }
 .colons{
     display: block;
+    padding: 3vw 0;
+    text-decoration: none;
+    border:none;
+}
+.price, .info{
+    color: darkcyan;
+    border:none;
+    text-decoration: none;
+}
+
+.content{
+    text-align: center;
 }
 
 .slider {
@@ -304,7 +316,7 @@ button{
     opacity: 1;
     transition: 1s;
 }
-.slider .slick-arrow.slick-prev:hover, .slider .slick-arrow.slick-next:hover{
+.slider .slick-arrow.slick-prev:hover{
     background-color: rgb(182, 226, 226);
     outline: none;
 }
@@ -332,4 +344,12 @@ h1{
     background: rgb(255, 255, 255);
     padding: 1vh;
     border-radius: 10px;
+}
+
+.obl{
+    margin: 3% 0;
+}
+h1{
+    margin: 2% 0;
+    color: darkgoldenrod;
 }
