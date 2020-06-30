@@ -47,16 +47,19 @@ body{
   }
 .header{
     padding : 0.3em 2rem;
-    padding-bottom: 5vh;
+    align-items: center;    
 }
 .name{
-    font-size: 9vh;
     font-weight: bold;
+    align-items: center;
 
 }
 .name_logo{
+    font-size: 4vw;
     text-decoration: none;
     color: #fff;
+    align-items: center;
+    display: block;
 }
 
 .top_menu_url{
@@ -66,13 +69,40 @@ body{
 
 .sing{
     background-color: transparent;
-    font-size: 30px;
+    font-size: 2vw;
+    color:gold;
+    text-decoration: none;
+    outline: none;
+    border:none;
+}
+.s1{
+    background-color: transparent;
+    font-size: 2vw;
+    
+    margin: 0 3vw;
+    color:gold;
+    text-decoration: none;
+    outline: none;
+    border:none;
+}
+.sing1  {
+    background-color: transparent;
+    font-size: 3vw;
     color:gold;
     text-decoration: none;
     margin: 0 1em;
     outline: none;
     border:none;
 }
+.logo{
+    font-size: 4vw;
+    color: white;
+}
+.logo1{
+    font-size: 2.5vw;
+    color: white;
+}
+
 
 .basket{
     display: block;
@@ -80,7 +110,6 @@ body{
 }
 
 .top-nav{
-    margin: 1em 2em;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -91,27 +120,32 @@ body{
 }
 
 .srh{
-    height: 50px;
-    width: 400px;
+    height: 4vw;
+    width: 30vw;
     border-radius: 10px;
     text-decoration: none;
     outline: none;
     border-color: transparent;
-    margin: 0 1em;
 }
 .srh-btn{
-    width: 50px;
-    height: 50px;
-    margin: 0 1em;
+    width: 4vw;
+    margin-left: 2%;
+    height: 4vw;
     border-radius: 10px;
     text-decoration: none;
     outline: none;
     border-color: transparent;
+}
+.srh-btn_logo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
 }
 
 .item{
     color: #fff;
-    font-size: 34px;
+    font-size: 5vh;
     font-weight: bold;
     margin: 0 1em;
     outline: none;
@@ -168,7 +202,7 @@ body{
   }
 .genres{
     display: block;
-    font-size: 34px;
+    font-size: 2.7vw;
     font-weight: bold;
     padding-top: 0.3em;
     padding-left: 1em;
@@ -202,7 +236,7 @@ body{
 }
 .auto_second{
     color: white;
-    font-size: 0.8em;
+    font-size: 1vw;
 }
 .auto_input{
     width: 250px;
@@ -232,34 +266,38 @@ button{
     border-radius: 10px;
 }
 .frame_cnt{
-    margin: 0 8rem;
+    margin: 0 8vw;
     display: flex;
 }
 
 .frame_text{
-    margin: 1.3em 0.87em;
+    margin: 4vw 1vw;
     width: 50%;
     color: darkcyan;
 }
 
 .frame-img{
-    margin: 1.1em 0em;
+    margin: 1vw 0em;
     margin-right: 1em;
-    width: 50%;
+    max-width: 30vw;
     text-align: center;
 }
+img{
+    max-width: 100%;
+}
+
 
 .first-line{
-    font-size: 1em;
-    margin: 0.4em 0;
+    font-size: 2vw;
+    margin: 0.4vw 0;
 }
 .second-line{
-    font-size: 2.2em;
-    margin: 0.4em 0;
+    font-size: 2.8vw;
+    margin: 0.4vw 0;
 }
 .third-line{
-    font-size: 1em;
-    margin: 0.4em 0;
+    font-size: 2vw;
+    margin: 0.4vw 0;
 }
 
 .main{
@@ -289,17 +327,70 @@ button{
 .content{
     text-align: center;
 }
-
+.img{
+    width: 28vw;
+    height: auto;
+}
+.icon{
+    width: 3vw;
+    height: 5vh;
+}
 .slider {
     position: relative;
 }
 
-@media (max-width:767px){
+img{
+    width: 20vw;
+    height: 30vw;
+}
+@media (max-width:900px){
 	.slider {
-		padding: 0px 40px;
-	}
+        padding: 0px 40px;
+    }
+    img{
+        height: 36vw;
+        width: 24vw;
+    }
+    h1{
+        padding-left: 4.6vw;
+        font-size: 4vw;
+        margin: 0 7vw;
+    }
+    
 }
 
+@media (max-width: 768px){
+    img{
+        height: 30vw;
+        width: 20vw;
+    }
+    .icon{
+        height: 3vw;
+        width: 3vw;
+    }
+    h1{
+        padding-left: 6vw;
+        font-size: 4vw;
+        margin: 0 7vw;
+    }
+}
+@media (max-width: 600px){
+    img{
+        height: 30vw;
+        width: 20vw;
+    }
+    .icon{
+        height: 3vw;
+        width: 3vw;
+    }
+    h1{
+        padding-left: 8.5vw;
+        font-size: 5vw;
+        margin: 0 7vw;
+    }
+
+}
+    
 .slider .slick-arrow{
 	position: absolute;
 	top: 50%;
@@ -337,9 +428,6 @@ button{
 }
 
 
-h1{
-    color:rgb(176, 235, 235);
-}
 .obl{
     background: rgb(255, 255, 255);
     padding: 1vh;
@@ -350,6 +438,160 @@ h1{
     margin: 3% 0;
 }
 h1{
-    margin: 2% 0;
+    color:rgb(176, 235, 235);
+    font-size: 3vw;
+    margin: 0.5vw 0;
     color: darkgoldenrod;
+}
+.section{
+    margin: 2%;
+    margin-top:-1%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 80.3vh;
+}
+.section-first{
+    width: 25%;
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+}
+
+.first_section_text{
+    color: gray;
+    font-size: 1.4em;
+}
+
+.second_h1_container{
+    font-size: 1.4em;
+    font-weight: normal;
+    color: black;
+    
+
+}
+.section-second{
+    width: 50%;
+    color:black;
+    padding: 2% 5%;
+    background-color: #fff;
+    height: 100%;
+}
+.button_container{
+    margin: 5% 0;
+}
+.buy{
+    color:  black;
+    width: 16vw;
+    height: 4vw;
+    background-color:  rgb(202, 245, 245);
+    outline: none;
+    border-radius: 3px;
+    font-size: 1.4em;
+}
+.buy:hover{
+    background: linear-gradient(65deg, darkcyan, cyan);
+    color:#fff;
+    outline: none;
+}
+
+.massage{
+    margin-left: 1.7%;
+    width: 22vh;
+    height: 4vw;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    border-color:linear-gradient(65deg, darkcyan, cyan); 
+}
+
+.massage:hover, .hurt:hover{
+    background: linear-gradient(65deg, darkcyan, cyan); 
+    color: white;
+}
+.hurt:hover{
+    color:red;
+    transform:translateZ(20%);
+}
+.hurt{
+    margin-left: 1.8%;
+    width: 4.2vw;
+    height: 4.2vw;
+    outline: none;
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: blue;
+    text-align: center;
+}
+.section-third{
+    width: 20%;
+    padding:2% 2%;
+    color:black;
+    background-color: #fff; 
+}
+
+.pay{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.elsom{
+    display: block;
+    margin-top:5%;
+    text-decoration: none;
+    
+}
+.pay_card{
+    font-size: 1.4em;
+    font-weight: lighter;
+    display: block;
+    color: black;
+    margin-left: 10%;
+}
+.demirbank{
+    margin-top: 10%;
+    display: block;
+    text-decoration: none;
+}
+
+.text{
+    margin: 10% 2%;
+}
+
+.footer{
+    height: 16vh;
+    background-color: rgb(221, 223, 226);
+    text-align: center; 
+}
+
+.footer_text{
+    text-align: center;
+    padding-top: 5vh;
+}
+.icon{
+    margin: 0 0.5vh;
+}
+.footer_section_first{
+    display: flex;
+}
+
+.book{
+    text-decoration: none;
+    padding-top: 4vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    font-size: 2vw;
+    display: block;
+    color: #000;
+}
+.up{
+    color: black;
+    font-size: 1.5vw;
+    padding-top: 4vh;
+}
+
+.footer_btn{
+    margin-top: 4.5vh;
+    margin-left: 5vh;
+    width: 10vh;
+    height: 5vh;
 }
